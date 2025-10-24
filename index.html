@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Unit Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="converter-card">
+            <div class="card-header">
+                <h1><i class="fas fa-exchange-alt"></i> Universal Unit Converter</h1>
+                <p>Konversi berbagai satuan dengan mudah dan akurat</p>
+            </div>
+            
+            <div class="converter-content">
+                <div class="input-section">
+                    <div class="input-group">
+                        <label for="conversion-type"><i class="fas fa-ruler-combined"></i> Jenis Konversi:</label>
+                        <div class="select-container">
+                            <select id="conversion-type">
+                                <option value="mph-kmh">MPH → KM/H</option>
+                                <option value="kmh-mph">KM/H → MPH</option>
+                                <option value="knots-kmh">Knots → KM/H</option>
+                                <option value="kmh-knots">KM/H → Knots</option>
+                                <option value="feet-meters">Feet → Meters</option>
+                                <option value="meters-feet">Meters → Feet</option>
+                                <option value="km-meters">Kilometers → Meters</option>
+                                <option value="meters-km">Meters → Kilometers</option>
+                                <option value="miles-km">Miles → Kilometers</option>
+                                <option value="km-miles">Kilometers → Miles</option>
+                                <option value="inches-cm">Inches → Centimeters</option>
+                                <option value="cm-inches">Centimeters → Inches</option>
+                                <option value="celsius-fahrenheit">Celsius → Fahrenheit</option>
+                                <option value="fahrenheit-celsius">Fahrenheit → Celsius</option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="input-value"><i class="fas fa-pen"></i> Nilai Input:</label>
+                        <div class="input-container">
+                            <input type="number" id="input-value" placeholder="Masukkan nilai..." step="any" value="1">
+                            <span class="input-unit" id="input-unit">mph</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="conversion-arrow">
+                    <i class="fas fa-long-arrow-alt-down"></i>
+                </div>
+                
+                <div class="result-section">
+                    <div class="result-card">
+                        <div class="result-label">Hasil Konversi</div>
+                        <div class="result-value" id="result">1.61</div>
+                        <div class="result-unit" id="result-unit">km/h</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="conversion-info">
+                <div class="info-item">
+                    <i class="fas fa-sync-alt"></i>
+                    <span>Konversi Real-time</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Hasil Akurat</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Responsif</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="watermark">Created by Reno Budiman</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
